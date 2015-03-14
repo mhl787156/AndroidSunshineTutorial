@@ -5,11 +5,18 @@
     <EditTextPreference
         android:key="@string/pref_location_key"
         android:title="Location"
-        android:defaultValue="London"
+        android:defaultValue="@string/pref_location_default"
         android:selectAllOnFocus="true"
         android:inputType="textCapWords"
         android:capitalize="words"
         android:singleLine="true"
         android:maxLines="1" />
+
+    <ListPreference
+        android:key="@string/pref_units_key"
+        android:title="Units"
+        android:defaultValue="@string/pref_units_metric"
+        android:entryValues="@array/pref_units_values"
+        android:entries="@array/pref_units_values" />
 
 </PreferenceScreen>
